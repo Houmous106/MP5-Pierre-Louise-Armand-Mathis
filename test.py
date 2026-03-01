@@ -29,7 +29,7 @@ def test(lab):
     print("voici les cases vides : ")
     vide.afficherp()
     if entree != 0 or entree == sortie:
-        print("Il y a ",entree," entree en", coor_entree,"et ",sortie, " sortie en", coor_sortie, "!")
+        print("Il y a",entree,"entree en", coor_entree,"et",sortie, "sortie en", coor_sortie, "!")
         return True
     else:        
         if entree == sortie and entree == 0:

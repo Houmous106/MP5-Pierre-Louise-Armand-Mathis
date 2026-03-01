@@ -1,5 +1,4 @@
 
-
 class Pile:
     """ Classe Pile implémentée en python
     à partir de liste python
@@ -30,7 +29,8 @@ class Pile:
         for i in range(self.taillep()-1, -1, -1):   # balaie la pile en sens inverse
             val = self.pile[i]
             print(f"|{val}|")
-        return None
+        print("--------")
+        return 
     
     def taillep(self):
         taille_pile = 0
