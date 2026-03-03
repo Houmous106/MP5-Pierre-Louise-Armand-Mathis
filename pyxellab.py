@@ -26,9 +26,10 @@ class Labyrinthe:
     def draw(self):
         pyxel.cls(0)
         couleurs = {"X": 1, "E": 11, "S": 8, " ": 7,".": 9}
-        for y, ligne in enumerate(self.carte):
-            for x, case in enumerate(ligne):
-                pyxel.rect(x * TAILLE, y * TAILLE, TAILLE, TAILLE, couleurs[case])
+        for ligne in self.carte:
+            for case in ligne:
+                pyxel.rect(case[1] * TAILLE, case[0] * TAILLE, TAILLE, TAILLE, couleurs[case[2]])
+
 
 
 Labyrinthe(CARTE)
