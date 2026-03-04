@@ -34,7 +34,7 @@ def reso(C, lab):
 
     lab[C[0]][C[1]][2] = "." # les cases sur lequelles ont est deja passé sont marquées d'un point
 
-    if lab[C[0]-1][C[1]][2] == " " or lab[C[0]-1][C[1]][2] == "S": # on se balade dans le labyrinthe jusqu'a tomber sur la case S
+    if lab[C[0]-1][C[1]][2] == " " or lab[C[0]-1][C[1]][2] == "S": # on se balade dans le labyrinthe jusqu'à tomber sur la case S
         if reso((C[0]-1,C[1]), lab):
             return True
 

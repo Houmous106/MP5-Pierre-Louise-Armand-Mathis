@@ -22,7 +22,7 @@ class Labyrinthe:
         pyxel.run(self.update, self.draw)
 
     def est_mur(self, x, y):
-        """Verifie si la case est un mur
+        """Verifie si la case est un mur (créée dans le cas ou on aurait fait un personnage qui se deplace)
         E = case de coordonnée x, y
         S = booleen"""
         return self.carte[y][x][2] == "X"
