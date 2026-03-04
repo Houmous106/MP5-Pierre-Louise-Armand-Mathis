@@ -28,3 +28,5 @@ def listificator(txt):
             lab_list[i].append([i, j, lab_temp[i][j]])
 
     return lab_list
+
+print(listificator("dedale2.txt"))
