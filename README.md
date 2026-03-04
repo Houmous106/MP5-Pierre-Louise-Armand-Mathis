@@ -58,4 +58,3 @@ Une entrée et/ou une entrée peut être sur la bordure sans qui'il y ai d'incid
 Nous allons, enfin, résoudre votre labyrinthe !
 Ce code permet de résoudre le labyrinthe par récursivité.
 [rajouter info des fonctions et du code][saut de ligne à chaque phrase]
-
