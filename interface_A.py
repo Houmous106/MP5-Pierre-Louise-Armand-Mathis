@@ -7,7 +7,7 @@ CARTE = [[[0,0,"X"],[0,1,"X"],[0,2,"X"],[0,3,"X"],[0,4,"X"]],
 [[4,0,"X"],[4,1," "],[4,2,"X"],[4,3," "],[4,4,"X"]],
 [[5,0,"X"],[5,1,"X"],[5,2,"X"],[5,3,"X"],[5,4,"X"]]]
 
-TAILLE = 10
+TAILLE = 16
 
 class Labyrinthe:
     def __init__(self, carte):
@@ -25,11 +25,11 @@ class Labyrinthe:
 
     def draw(self):
         pyxel.cls(0)
-        couleurs = {"X": 1, "E": 11, "S": 8, " ": 6,".": 10}
+        couleurs = {"X": 1, "E": 11, "S": 2, " ": 6,".": 10}
         for ligne in self.carte:
             for case in ligne:
                 pyxel.rect(case[1] * TAILLE, case[0] * TAILLE, TAILLE, TAILLE, couleurs[case[2]])
 
 
 
-Labyrinthe(CARTE)
+Labyrinthe(CARTE) 
