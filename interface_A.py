@@ -10,7 +10,11 @@ CARTE = [[[0,0,"X"],[0,1,"X"],[0,2,"X"],[0,3,"X"],[0,4,"X"]],
 TAILLE = 16
 
 class Labyrinthe:
+    
     def __init__(self, carte):
+        """Initialise le labyrinthe puis le lance
+        E = liste
+        S = lab sur pyxel"""
         self.carte = carte
         largeur = len(carte[0]) * TAILLE
         hauteur = len(carte) * TAILLE
@@ -18,12 +22,18 @@ class Labyrinthe:
         pyxel.run(self.update, self.draw)
 
     def est_mur(self, x, y):
+        """Verifie si la case est un mur
+        E = case de coordonnée x, y
+        S = booleen"""
         return self.carte[y][x][2] == "X"
 
     def update(self):
         pass
 
     def draw(self):
+        """Affiche le labyrinthe
+        E = le labyrinthe initialisé
+        S = affichage pyxel"""
         pyxel.cls(0)
         couleurs = {"X": 1, "E": 11, "S": 2, " ": 6,".": 10}
         for ligne in self.carte:
