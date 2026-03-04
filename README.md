@@ -24,8 +24,8 @@ S = sortie
 
 Le code s'adapte à la taille du labyrinthe.
 Maintenant que vous avez créé votre labyrinthe, vous pouvez utiliser la fonction listificator pour transformer le .txt en liste.
-Ce code va dabord transformer le .txt en chaine de caractères, qui sera split dans une liste temporaire nomée lab_temp en fonction de \n pour séparer les lignes.
-Ensuite, chaque caractère est ajouté dans une liste avec les coordonnées, dans une liste qui correspond à la ligne, dans une liste qui correspond au labyrinthe.
+Ce code va d'abord transformer le .txt en chaine de caractères, qui sera split dans une liste temporaire nomée lab_temp en fonction de \n pour séparer les lignes.
+Ensuite, chaque caractère est ajouté dans une liste avec les coordonnées, dans une liste qui correspond à la ligne, elle-même dans une liste qui correspond au labyrinthe.
 
 Résultat:
 
@@ -42,19 +42,25 @@ Résultat:
 # Etape 2 (Armand):
 
 Nous allons, à présent, tranformer votre fichier texte en un labyrinthe avec une magnifique interface.
-Ce code permet de [rajouter info des fonctions et du code][saut de ligne à chaque phrase]
-
+La classe Labyrinthe est constituée de 3 fonctions.
+La première (init) va initialiser le labyrinthe.
+La deuxieme (mur) vérifie si c'est un mur.
+Enfin, la dernière (draw) met de la couleur dans les bonnes cases selon l'entrée, la sortie, le chemin et le chemin parcouru.
 
 # Etape 3 (Louise):
 
 Nous allons maintenant verifier votre labyrinthe !
 Ce code permet de verifier votre labyrinthe pour le bon fonctionnement de votre labyrinthe.
-Une premiere fonction permettra de verifier s'il y a bien une ou plusieurs entrées et une ou plusieurs sorties.
-Une seconde fonction permettra de verifier si la bordure de votre labyrinthe n'ai pas de vide.
+Une premiere fonction (test) permettra de verifier s'il y a bien une ou plusieurs entrées et une ou plusieurs sorties.
+Une seconde fonction (bordure) permettra de verifier si la bordure de votre labyrinthe n'ai pas de vide.
 Une entrée et/ou une entrée peut être sur la bordure sans qui'il y ai d'incidence sur la resolution de votre labyrinthe.
 
 # Etape 4 (Pierre):
 
 Nous allons, enfin, résoudre votre labyrinthe !
 Ce code permet de résoudre le labyrinthe par récursivité.
-[rajouter info des fonctions et du code][saut de ligne à chaque phrase]
+Une premiere fonction (entrée) permet de trouver l'entrée pour résoudre le labyrinthe.
+Une deuxieme fonction (reso) permet de resoudre le labyrinthe en partant de l'entrée trouver dans la premiere fonction.
+Une troisieme fonction (connection) permet de savoir si l'entrée et la sortie sont bien connectées grâce à la fonction reso.
+La derniere fonction (solution) permet d'afficher proprement le chemin du labyrinthe en appelant les trois autres fonctions.
+
