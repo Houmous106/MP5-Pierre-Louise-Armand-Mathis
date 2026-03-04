@@ -8,6 +8,7 @@ Voici la marche à suivre :
 
 Nous allons créer votre labynrinthe.
 Dans un fichier texte, le labyrinthe prendra la forme suivante:
+
 XXXXX
 X X S
 X   X
@@ -20,13 +21,21 @@ X = mur
   = vide
 E = entrée
 S = sortie
-. = chemin qui marche
 
+Le code s'adapte à la taille du labyrinthe.
 Maintenant que vous avez créé votre labyrinthe, vous pouvez utiliser la fonction listificator pour transformer le .txt en liste.
 Ce code va dabord transformer le .txt en chaine de caractères, qui sera split dans une liste temporaire nomée lab_temp en fonction de \n pour séparer les lignes.
 Ensuite, chaque caractère est ajouté dans une liste avec les coordonnées, dans une liste qui correspond à la ligne, dans une liste qui correspond au labyrinthe.
 
 Résultat:
+
+[[[0,0,"X"],[0,1,"X"],[0,2,"X"],[0,3,"X"],[0,4,"X"]],
+ [[1,0,"X"],[1,1," "],[1,2,"X"],[1,3," "],[1,4,"S"]],
+ [[2,0,"X"],[2,1," "],[2,2," "],[2,3," "],[2,4,"X"]],
+ [[3,0,"X"],[3,1,"E"],[3,2,"X"],[3,3," "],[3,4,"X"]],
+ [[4,0,"X"],[4,1," "],[4,2,"X"],[4,3," "],[4,4,"X"]],
+ [[5,0,"X"],[5,1,"X"],[5,2,"X"],[5,3,"X"],[5,4,"X"]]]
+
 
 
 
