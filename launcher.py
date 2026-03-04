@@ -7,6 +7,10 @@ from interface_A import *
 
 def launch(lab):
     laby_list = listificator(lab)
+    return Labyrinthe(laby_list)
+
+def launch_sol(lab):
+    laby_list = listificator(lab)
     sol = solution(laby_list)
     return Labyrinthe(laby_list)
 
